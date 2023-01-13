@@ -15,7 +15,7 @@
     <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
-        <li><a href="#automation-solutiion-Built-With">Automation solutiion Built With</a></li>
+        <li><a href="#automation-solution-built-with">Automation solution Built With</a></li>
       </ul>
     </li>
     <li>
@@ -25,7 +25,8 @@
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#run-test-with-visual-studio">Run test with Visual Studio Code</a></li>
+    <li><a href="#run-test-with-visual-studio-code">Run test with Visual Studio Code</a></li>
+    <li><a href="#to-run-test-on-terminal">Run test on terminal</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
@@ -48,7 +49,7 @@ This readme will help you understand the automation solution that was implemente
 
 
 
-### Automation solutiion Built With
+### Automation solution Built With
 
 * Built on Cypress 
 * Javascript 
@@ -70,14 +71,18 @@ To get a local copy up and running follow these simple example steps.
 ### Prerequisites
 
 This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+
 * NodeJS
   ```sh
   Version 8.0.0 and above, on terminal to find version run: node --version 
   ```
+  [Install NodeJS](https://nodejs.org/en/)
+  
+* npm
+  ```sh
+  npm install npm@latest -g
+  ```
+  
 * Visual Studio Code 
   [Install Visual Studio Code](https://code.visualstudio.com/download) 
 
@@ -86,8 +91,11 @@ This is an example of how to list things you need to use the software and how to
 ### Installation
 
 _Once prerequisites are installed proceed with the list below_
+Read both processes and if you are not able to run only from termianal then Visual Studio Code configuration would help out with the process. 
 
-## To Run Test on Cypress
+
+<!-- RUN WITH VISUAL STUDIO -->
+## Run test with Visual Studio Code 
 
 1. Clone the repo
    ```sh
@@ -96,8 +104,39 @@ _Once prerequisites are installed proceed with the list below_
 2. On Terminal access Automationtest/TestAutomationTask/Application/ folder
    ```sh
    Run the command npm install http-server -g
-   Navigate to the specific path of your file folder in CMD and run the command http-server
-   Go to your browser and type http://localhost:8080/EHS.html  
+   Now run the command http-server on the same location
+   Go to your browser: http://localhost:8080/EHS.html  
+   EHS Application should run there.
+
+   ```
+   http://localhost:8080/EHS.html 
+   
+_HTML SERVER needs to be running in order for Cypress to work with the app._
+
+3. Open Visual Studio Code and import the project,
+4. Remember HTML Server needs to be running with the EHS app
+5. Open Terminal access from Visual Studio Code
+6. To run Cypress
+   ```js
+   Access EHS-test folder on VSC terminal
+   Run command: npx cypress open
+   ```
+ 
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+## To Run Test on Terminal
+
+1. Clone the repo
+   ```sh
+   git clone https://github.com/your_username_/Project-Name.git
+   ```
+2. On Terminal access Automationtest/TestAutomationTask/Application/ folder
+   ```sh
+   Run the command npm install http-server -g
+   Now run the command http-server on the same location
+   Go to your browser: http://localhost:8080/EHS.html  
    EHS Application should run there.
 
    ```
@@ -120,24 +159,6 @@ _HTML SERVER needs to be running in order for Cypress to work with the app._
 if you have any issue with cypress please check out [Cypress Installation](https://docs.cypress.io/guides/getting-started/installing-cypress)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
-<!-- RUN WITH VISUAL STUDIO -->
-## Run test with Visual Studio Code 
-
-1. Open Visual Studio Code and import the project,
-2. Remember HTML Server needs to be running with the EHS app
-3. Open Terminal access from Visual Studio Code
-4. To run Cypress
-   ```js
-   Access EHS-test folder on terminal
-   Run command: npx cypress open
-   ```
- 
-
-
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
